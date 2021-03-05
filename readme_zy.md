@@ -1,9 +1,9 @@
 <!--
- * @FilePath: /ScaledYOLOv4/home/zy/application/yolov4/readme.md
+ * @FilePath: /undefined/home/zy/application/yolov4/WongKinYiu_PyTorch_YOLOv4/ScaledYOLOv4/readme_zy.md
  * @Description:
  * @Author: zy
  * @Date: 2021-03-04 17:16:33
- * @LastEditTime: 2021-03-05 14:13:16
+ * @LastEditTime: 2021-03-05 16:10:26
  * @LastEditors: zy
 -->
 
@@ -71,6 +71,11 @@ COCO 数据集
 $ python train.py --device 0 --batch-size 2 --data data/coco128.yaml --cfg models/yolov4-csp.cfg --weights weights/yolov4-csp.weights --name yolov4-csp
 ```
 
+巨结肠数据集
+
+```shell
+$ python train.py --device 0 --batch-size 2 --data data/data_HD.yaml --cfg models/yolov4-csp.cfg --weights weights/yolov4-csp.weights --name yolov4-csp
+```
 
 ### testing
 

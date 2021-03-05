@@ -4,4 +4,4 @@ runs/
 weights/
 ws.code-workspace
 /*/__pycache__/
-
+.vscode/
