@@ -1,0 +1,7 @@
+__pycache__/
+runs/
+*.jpg
+weights/
+ws.code-workspace
+/*/__pycache__/
+

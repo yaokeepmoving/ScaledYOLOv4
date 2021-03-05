@@ -403,6 +403,7 @@ def load_darknet_weights(self, weights, cutoff=-1):
         cutoff = 15
 
     # Read weights file
+    print(f'weights: {weights}')
     with open(weights, 'rb') as f:
         # Read Header https://github.com/AlexeyAB/darknet/issues/2914#issuecomment-496675346
         self.version = np.fromfile(f, dtype=np.int32, count=3)  # (int32) version info: major, minor, revision

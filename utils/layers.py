@@ -1,11 +1,10 @@
-import torch.nn.functional as F
-
-from utils.general import *
-
 import torch
+import torch.nn.functional as F
 from torch import nn
 
-from mish_cuda import MishCuda as Mish
+# from mish_cuda import MishCuda as Mish
+from models.common import Mish
+from utils.general import *
 
 
 def make_divisible(v, divisor):
