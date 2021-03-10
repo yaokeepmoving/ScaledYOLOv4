@@ -1,0 +1,9 @@
+scipy==1.4.1
+tqdm==4.42.1
+opencv_python==4.2.0.34
+torch==1.7.1+cu101
+pycocotools==2.0.2
+matplotlib==3.2.1
+torchvision==0.8.2+cu101
+thop==0.0.31.post2005241907
+numpy==1.19.2

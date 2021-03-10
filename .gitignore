@@ -1,5 +1,6 @@
 __pycache__/
 runs/
+whls/
 *.jpg
 weights/
 ws.code-workspace
