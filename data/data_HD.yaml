@@ -14,17 +14,37 @@
 # 批量缩放图片
 # $ for img in `ls ./*.jpg`; do convert -resize 640x640 $img ../train_640/$img; done
 
-train: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/train_3200.txt  # 16551 images
-# val: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/val/  # 4952 images
-val: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/val_test_16.txt  # 4952 images
-test: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/test/
-
-# train: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/train/  # 16551 images
-# val: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/val.txt  # 4952 images
+# train: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/train_3200.txt  # 16551 images
+# # val: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/val/  # 4952 images
+# val: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/val_test_16.txt  # 4952 images
 # test: /home/zy/application/xinhua_Hirschsprungs_disease/others/diy_dataset_yolov5/HD_winsize_2048_stepsize_512_threshold_0.7/images/test/
 
+# Docker 版
+# train: /home/datasets/images/train_3200.txt  # 16551 images
+# val: /home/datasets/images/val_test_16.txt  # 4952 images
+# test: /home/datasets/images/test/
+
+# coco128
+train: /home/datasets/coco128/images/train2017/  # 16551 images
+val: /home/datasets/coco128/images/train2017/  # 4952 images
+test: /home/datasets/coco128/images/train2017/
+
 # number of classes
-nc: 1
+# nc: 1
+
+nc: 80
 
 # class names
-names: [ 'plexus' ]
+# HD
+# names: [ 'plexus' ]
+
+# coco128
+names: [ 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+         'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+         'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+         'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+         'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+         'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+         'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
+         'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear',
+         'hair drier', 'toothbrush' ]
